@@ -1,0 +1,94 @@
+﻿@model WeBikeWeb.Aplicacao.ViewModels.BicicletaViewModel
+
+@{
+    ViewBag.Title = "Detalhes da Bicicleta";
+}
+
+<h2>Detalhes da Bicicleta</h2>
+<div>
+    <div class="jumbotron">
+        
+           
+                <img src="~/@Html.DisplayFor(modelItem => Model.Fotos)" class="img-responsive" alt="" />
+               
+            
+      
+    </div>
+
+
+    <div>
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Nome)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Nome)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Aro)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Aro)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Quadro)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Quadro)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.VlHora)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.VlHora)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.VlDia)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.VlDia)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.VlSemana)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.VlSemana)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Fotos)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Fotos)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Entrega)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Entrega)
+            </dd>
+
+        </dl>
+    </div>
+</div>
+<p>
+    Divulgue sua Bicicleta!
+</p>
+@*<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BicicletaId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>*@

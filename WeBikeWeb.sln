@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeBikeWeb", "WeBikeWeb\WeBikeWeb.csproj", "{63626933-FE0B-4D5C-8778-45D06B50CEF3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AFA7E325-8A60-4F49-BF48-C694D25B5BC8}"
+	ProjectSection(SolutionItems) = preProject
+		gitignore = gitignore
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeBikeWeb.Dominio", "WeBikeWeb.Dominio\WeBikeWeb.Dominio.csproj", "{E7D25409-DCD7-4B94-9A24-2463EB7960BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeBikeWeb.Infra.Dados", "WeBikeWeb.Infra.Dados\WeBikeWeb.Infra.Dados.csproj", "{57245512-40BE-4C85-8A3E-C3D5A734780C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeBikeWeb.Aplicacao", "WeBikeWeb.Aplicacao\WeBikeWeb.Aplicacao.csproj", "{1F01D901-4B6D-41FC-906F-9EADB8AC1094}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63626933-FE0B-4D5C-8778-45D06B50CEF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63626933-FE0B-4D5C-8778-45D06B50CEF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63626933-FE0B-4D5C-8778-45D06B50CEF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63626933-FE0B-4D5C-8778-45D06B50CEF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7D25409-DCD7-4B94-9A24-2463EB7960BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7D25409-DCD7-4B94-9A24-2463EB7960BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7D25409-DCD7-4B94-9A24-2463EB7960BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7D25409-DCD7-4B94-9A24-2463EB7960BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57245512-40BE-4C85-8A3E-C3D5A734780C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57245512-40BE-4C85-8A3E-C3D5A734780C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57245512-40BE-4C85-8A3E-C3D5A734780C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57245512-40BE-4C85-8A3E-C3D5A734780C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F01D901-4B6D-41FC-906F-9EADB8AC1094}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F01D901-4B6D-41FC-906F-9EADB8AC1094}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F01D901-4B6D-41FC-906F-9EADB8AC1094}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F01D901-4B6D-41FC-906F-9EADB8AC1094}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

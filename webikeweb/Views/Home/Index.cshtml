@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<header>
+    <div class="container">
+
+
+        <div class="row header-info">
+
+            <div class="row" align="center">
+                <img id="bckauditoria" pop-editor-modal="image" ng-model="image_src" pop-editor-rollover-icon="i-camera" class="ng-pristine ng-valid" src="../Img/logo.png">
+            </div>
+
+            <div class="col-sm-10 col-sm-offset-1 text-center">
+                <h1 class="wow fadeIn">Alugue bicicletas em Blumenau</h1>
+                <br />
+                <p class="lead wow fadeIn" data-wow-delay="0.5s">Alugue uma bicicleta por um preço acessível ou faça dinheiro com sua bicicleta parada.</p>
+                <br />
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                        <div class="row">
+                            <div class="col-xs-6 text-right wow fadeInUp" data-wow-delay="1s">
+                                @Html.ActionLink("Quero uma bike", "Busca", "Bicicletas", null, new {@class = "btn btn-primary" })
+                                <!--<a href="alugar.html" class="btn btn-primary" id="btn-cor">Quero uma bike</a>  -->
+                            </div>
+                            <div class="col-xs-6 text-left wow fadeInUp" data-wow-delay="1.4s">
+                                @Html.ActionLink("Tenho uma bike", "Create", "Bicicletas", null, new { @class = "btn btn-primary" })
+                                 <!-- <a href="http://goo.gl/forms/tadlVc7iqOZRbVXb2" target="_blank" class="btn btn-primary" id="btn-cor">Tenho uma bike</a> -->
+                            </div>
+                        </div><!--End Button Row-->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>

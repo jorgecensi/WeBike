@@ -1,0 +1,75 @@
+﻿@model IEnumerable<WeBikeWeb.Aplicacao.ViewModels.BicicletaViewModel>
+
+@{
+    ViewBag.Title = "Minhas Bicicletas";
+}
+
+<legend>Minhas Bicicletas</legend>
+
+<p>
+    @Html.ActionLink("Cadastre uma bicicleta", "Create",null, new { @class = "btn btn-success" })
+    
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Aro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Quadro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VlHora)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VlDia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VlSemana)
+        </th>
+       
+        <th>
+            @Html.DisplayNameFor(model => model.Entrega)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Aro)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Quadro)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VlHora)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VlDia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VlSemana)
+        </td>        
+        <td>
+            @Html.DisplayFor(modelItem => item.Entrega)
+        </td>
+        <td>
+            @*
+                Desabilitado esta função pois é preciso resolver o problema de mapeamento
+                entre duas classes de dominio em uma classe ViewModel
+                
+                @Html.ActionLink("Edit", "Edit", new { id=item.BicicletaId }) |*@
+            @Html.ActionLink("Detalhes", "Details", new { id=item.BicicletaId }) |
+            @Html.ActionLink("Remover", "Delete", new { id=item.BicicletaId })
+        </td>
+    </tr>
+}
+
+</table>

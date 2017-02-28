@@ -1,0 +1,93 @@
+﻿@model WeBikeWeb.Aplicacao.ViewModels.BicicletaViewModel
+
+@{
+    ViewBag.Title = "Remover Bicicleta";
+}
+
+<h2>Remover Bicicleta</h2>
+
+<h3>Tem certeza que deseja remover esta bicicleta?</h3>
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Aro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Aro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Quadro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quadro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VlHora)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VlHora)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VlDia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VlDia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VlSemana)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VlSemana)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fotos)
+        </dt>
+
+       
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Entrega)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Entrega)
+        </dd>
+
+    </dl>
+
+    <div>
+        <a href="#">
+            <img src="~/@Html.DisplayFor(model => model.Fotos) " class="img-responsive" alt="" />          
+        </a>
+    </div>
+    <hr />
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Remover" class="btn btn-danger" /> |
+           
+        </div>
+    }
+</div>

@@ -1,0 +1,23 @@
+﻿@model IEnumerable<WeBikeWeb.Aplicacao.ViewModels.BicicletaViewModel>
+
+
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4">
+                <a href="@Url.Action("Details","Bicicletas", new { id=item.BicicletaId }) ">
+                    <img src="~/@Html.DisplayFor(modelItem => item.Fotos) " class="img-responsive" alt="" />
+                    <div class="desc">
+                        <spam class="h3 truncate">@Html.DisplayFor(modelItem => item.Nome) </spam>
+                        <br />
+                        <spam>
+                            R$@Html.DisplayFor(modelItem => item.VlHora)/Hora - Aro:@Html.DisplayFor(modelItem => item.Aro) - Quadro:@Html.DisplayFor(modelItem => item.Quadro)
+                        </spam>
+                    </div>
+                </a>
+            </div>
+
+        }
+    </div>
+</div>
